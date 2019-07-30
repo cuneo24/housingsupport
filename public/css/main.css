@@ -1,0 +1,111 @@
+#homelogo {
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    display: block;
+    margin: auto;
+}
+
+#titlelogo {
+    color: #006cb7;
+    text-align:center;
+    font-size:35px;
+    font-weight: bold;
+    display:block;
+}
+
+#logobar {
+    background-image: url('../images/lighthouse.jpg');
+    background-position: 0px -300px;
+    box-shadow: 0px 0px 20px 15px white inset;
+}
+
+body {
+    background-image: url('../images/brickbackground - color.png');
+    background-size: 1000px 1000px;
+    background-attachment: fixed;
+}
+
+#mainwrapper {
+    display: block;
+    width: 1000px;
+    /* border-left: #ebc46a outset 3px;
+    border-right: #ebc46a outset 3px; */
+    background-color: white;
+    height: 100%;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    margin-left: -500px; /* Negative half of width. */
+    box-shadow: 0px 0px 20px 20px white;
+}
+
+#navwrapper {
+    text-align:center;
+    background-color: white;
+    width: 1000px;
+    display: block;
+    margin: auto;
+    border-top: #ebc46a outset 2px;
+    border-bottom: #ebc46a outset 2px;
+    font-size: 0;
+}
+
+.navbutton {
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    color: #006cb7;
+    border: none;
+    font-size: 24px;
+}
+
+.navbutton:hover {
+    color: white;
+    background-color: #006cb7;
+}
+
+.navbutton:active{
+    color: #ebc46a;
+    border: #006cb7 inset 4px;
+}
+
+#navbuttonselected {
+    color: #ebc46a;
+    background-color: #006cb7;
+    border: #006cb7 inset 4px;
+}
+
+button:focus {outline:0;}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+#contentwrapper {
+    padding: 15px;
+    font-size: 20px;
+}
+
+#header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 20px;
+    background-color: #006cb7;
+    width: 100%;
+    z-index: 2;
+    border-bottom: #ebc46a outset 3px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    background-color: #006cb7;
+    width: 100%;
+    z-index: 2;
+    border-top: #ebc46a outset 3px;
+}
