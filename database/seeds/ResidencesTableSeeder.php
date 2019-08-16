@@ -30,6 +30,7 @@ class ResidencesTableSeeder extends Seeder
                 '27 bedrooms, 8 full bathrooms, and 3 kitchens',
                 '11302',
                 '466',
+                '52/190',
                 '0'
             ],
             [
@@ -50,6 +51,7 @@ class ResidencesTableSeeder extends Seeder
                 '14 bedrooms, 3.5 bathrooms, and 1 kitchen. The property is the birthplace of Josiah Bartlett in 1730.',
                 '10917',
                 '3',
+                '77/41',
                 '0'
             ],
             [
@@ -70,6 +72,7 @@ class ResidencesTableSeeder extends Seeder
                 'N/A',
                 '10917',
                 '3',
+                '77/41',
                 '0'
             ],
             [
@@ -90,6 +93,7 @@ class ResidencesTableSeeder extends Seeder
                 '1 unit, 5 bedrooms, 2.5 bathrooms and 1 kitchen',
                 '10917',
                 '3',
+                '77/41',
                 '0'
             ],
             [
@@ -110,6 +114,7 @@ class ResidencesTableSeeder extends Seeder
                 '10 total bedroom(s), 10 total baths on two floors, with a commercial tenant on floor one, 3 total half baths',
                 '18958',
                 '136',
+                '700-628-10',
                 '0'
             ],
             [
@@ -130,11 +135,12 @@ class ResidencesTableSeeder extends Seeder
                 '1 units, 1 bedrooms, 1 bathroom and kitchen - 2 unit(s), 10 room(s), 4 bedroom(s), 2 bath(s), 0 half bath(s).',
                 '12818',
                 '334',
+                '707-657-9',
                 '0'
             ],
             [
                 'Parker Street Residence – Molin Building',
-                'images/parkerstreetresiidence.jpg',
+                'images/parkerstreetresidence.jpg',
                 'On January 21, 2008, a fast-moving fire engulfed a block of Parker and Market Street in Lawrence and destroyed this property. It had been seven residential units over commercial space. The property was rebuilt in 2009 and contains 10 residential apartments and one commercial unit. The tenant and service provider will continue to be Vinfen and the Dept. of Mental Health. with housing and services for individuals with disabilities.',
                 'Vinfen and the Dept. of Mental Health',
                 '2 Springfield Street/46-58 Parker Street',
@@ -150,11 +156,12 @@ class ResidencesTableSeeder extends Seeder
                 'Ten one-bedroom units and one commercial space.',
                 '4871',
                 '345',
+                '102_0_16_0',
                 '0'
             ],
             [
                 'E. James Gaines Veterans Residence',
-                'images/ejaimesgaines.jpg',
+                'images/ejamesgaines.jpg',
                 'The property was built in 2004 and contains 10 residential apartments for Veterans. Many of the tenants are self – sufficient however we work with Veterans Northeast Outreach Center.',
                 'Self-sufficience and Veterans Northeast Outreach Center',
                 '34 Parker Street',
@@ -170,6 +177,7 @@ class ResidencesTableSeeder extends Seeder
                 'Eight one-bedroom and two 2-bedroom units.',
                 'N/A',
                 'N/A',
+                '102_0_16_0',
                 '0'
             ],
             [
@@ -190,6 +198,7 @@ class ResidencesTableSeeder extends Seeder
                 '3 units, 12 bedrooms, 3 bathrooms and kitchens',
                 '3962',
                 '165',
+                ': 90_0_64_0',
                 '0'
             ],
             [
@@ -210,6 +219,7 @@ class ResidencesTableSeeder extends Seeder
                 'N/A',
                 '4213',
                 '189',
+                '90_0_65_0',
                 '1'
             ]
 
@@ -235,7 +245,8 @@ class ResidencesTableSeeder extends Seeder
             $residence->other = $residenceData[14];
             $residence->book = $residenceData[15];
             $residence->page = $residenceData[16];
-            $residence->hidden = $residenceData[17];
+            $residence->map_parcel = $residenceData[17];
+            $residence->hidden = $residenceData[18];
 
             $residence->save();
         }

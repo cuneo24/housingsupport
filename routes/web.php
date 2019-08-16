@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function(){
     return view('index');
 });
 
-Route::get('/directors', function () {
-    return view('directors');
-});
+Route::get('/residences', 'ResidenceController@showResidences');
+
+Route::get('/directors', 'DirectorController@showDirectors');

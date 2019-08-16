@@ -34,6 +34,7 @@ class CreateResidencesTable extends Migration
             $table->string('other');
             $table->string('book');
             $table->string('page');
+            $table->string('map_parcel');
             $table->boolean('hidden');
         });
     }

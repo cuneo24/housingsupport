@@ -1,6 +1,7 @@
 window.onload = function(){
-    buttons = document.getElementsByClassName('navbutton');
-    title = document.getElementById('title').innerHTML;
+    var buttons = document.getElementsByClassName('navbutton');
+    var title = document.getElementById('title').innerHTML;
+    var residenceImageFocus = document.getElementById('residenceImageFocus');
 
     for(i=0; i<buttons.length; i++){
         if(title.includes(buttons[i].innerHTML)){
@@ -8,4 +9,39 @@ window.onload = function(){
             break;
         }
     }
-}
+
+    var residenceImages = document.getElementsByClassName('residenceImage');
+    var residenceImageSrc = [];
+    for(i=0;i<residenceImages.length;i++) {
+        residenceImageSrc[i] = residenceImages[i].getAttribute('src');
+        residenceImages[i].setAttribute('imageId', i);
+    }
+
+    $(residenceImages).click(function(){
+        residenceImageFocus.setAttribute('src',(this.getAttribute('src')));
+
+        var resTextDiv = document.createElement('div');
+        var resText = document.createTextNode(this.getAttribute('alt'));
+        resTextDiv.setAttribute('id', 'resImageText');
+        resTextDiv.appendChild(resText);
+        document.getElementById('imageFocusDiv').appendChild(resTextDiv);
+
+        $('#imageShade').fadeIn('100');
+        $('#imageFocusDiv').fadeIn('100');
+
+    });
+
+    $('#imageShade, #closeButton').click(function(){
+        $('#imageFocusDiv').fadeOut('50');
+        $('#imageShade').fadeOut('50');
+        setTimeout(function(){
+            document.getElementById('imageFocusDiv').removeChild(document.getElementById('resImageText'));
+        }, 300);
+    });
+
+    $('#closeButton').hover(function(){
+        $('#closeButton').attr('src', 'images/closebuttonhover.svg');
+    }, function(){
+        $('#closeButton').attr('src', 'images/closebutton.svg');
+    });
+};
