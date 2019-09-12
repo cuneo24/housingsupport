@@ -24,7 +24,7 @@ class CreateResidencesTable extends Migration
             $table->string('street');
             $table->string('city');
             $table->string('state');
-            $table->integer('zip');
+            $table->string('zip');
             $table->string('year_acquired');
             $table->string('year_built');
             $table->string('units');

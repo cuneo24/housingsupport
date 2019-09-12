@@ -5,7 +5,16 @@
 @endsection
 
 @section('content')
-&emsp;Housing Support Inc. is a non-profit, 501 (c) 3 corporation with the purpose “to provide shelter, housing and related support services to low income, homeless and/or handicapped individuals and families through the development, purchase, ownership or rental of various forms of real estate”.  HSI. is incorporated in the Commonwealth of Massachusetts with principal offices at 12 Pleasant Street, Suite 3, Newburyport, MA 01950.  HSI was incorporated on September 10th 1990.
-<br><br>
-&emsp;Housing Support, Inc. owns and manages properties providing housing to disabled very low-income individuals in Amesbury, Haverhill, and Lawrence, MA.  HSI. is structured so that it receives its operating capital from state and federal rental assistance payments, private rental payments and from various grants and contributions with supportive services provided through appropriate non-profits and state agencies.
+    <h2 id='titlelogo' style='text-align: center;'>Housing Support, Inc.</h2>
+    <div id='description'>
+        Housing Support Inc. was incorporated in 1990 as a vehicle to purchase a shelter for women and their children located in Amesbury Ma. In 1994, the bylaws were changed to broaden the scope of the agency and to add community leaders and user representatives to the board. HSI owns and manages properties providing housing to disabled very low income individuals in Amesbury, Haverhill, and Lawrence, MA.
+        <br><br>
+        Since then the corporation has developed an additional eight properties in the communities of Haverhill, Lawrence, and Amesbury, which offer supportive housing to homeless and/or disabled individuals. The projects were successfully completed despite challenges presented by difficult areas for the development and complex methods of competitive financing and public grant awards. HSI's real estate portfolio has a value of over $ 8,000,000. Over $1,500,000 in public grants has been awarded along with rental subsidies of $9,000,000 over the next twenty years have been guaranteed
+        <br><br>
+        These projects testify to a strong record by HSI in its ability to acquire property and develop it into affordable housing through public grants, public equity financing, market financing, and private donations. HSI has worked with The MA Land Bank, Community Economic Development and Assistance Corporation, Federal HOME Loan Bank, DHCD, DPH, DMH, DSS, MA Housing Finance Agency, Municipal Community Development Offices, MA Housing, North Shore HOME Consortium, Department of Housing and Urban Development and numerous local and regional housing authorities.
+        <br><br>
+        HSI has received national recognition for its work when the “Elms” was selected by the Fannie Mae Foundation to receive one of only eighteen awards given nationwide for Excellence.
+        <br><br>
+        Financial Partners include the Department of Housing and Urban Development, DHCD, Newburyport Bank, Pentucket Bank, CEDAC, Mass Housing, North Shore HOME Consortium, and the Federal HOME Loan Bank.
+    </div>
 @endsection

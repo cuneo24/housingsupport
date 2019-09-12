@@ -14,23 +14,23 @@
     display: block;
 }
 
-#logobar {
+/*#logobar {
     background-image: url('../images/lighthouse.jpg');
     background-position: 0px -300px;
-    box-shadow: 0px 0px 15px 20px white inset;
-}
+    box-shadow: 0px 0px 10px 15px white inset;
+}*/
 
 body {
     background-image: url('../images/brickbackground - color.png');
-    background-size: 1000px 1000px;
+    background-size: 800px 800px;
     background-attachment: fixed;
     z-index: -3;
 }
 
 #mainwrapper {
     display: block;
-    width: 1000px;
-    background-color: white;
+    width: 800px;
+    /* background-color: white; */
     margin: auto;
     padding-top: 20px;
     box-shadow: 0px 0px 20px 20px white;
@@ -39,25 +39,25 @@ body {
 
 #mainwrapperfacade {
     display: block;
-    width: 1000px;
+    width: 800px;
     height: 100%;
     background-color: white;
     position: fixed;
     top: 20px;
     left: 50%;
-    margin-left: -500px;
+    margin-left: -400px;
     z-index: -2;
-    box-shadow: 0px 0px 20px 20px white;
+    box-shadow: 0px 0px 80px 100px white;
 }
 
-#navwrapper {
+.navwrapper {
     text-align: center;
     background-color: white;
-    width: 1000px;
+    width: 800px;
     display: block;
     margin: auto;
-    border-top: #ebc46a outset 2px;
-    border-bottom: #ebc46a outset 2px;
+    border-top: gray solid 2px;
+    border-bottom: gray solid 2px;
     font-size: 0;
 }
 
@@ -67,23 +67,31 @@ body {
     background-color: white;
     color: #006cb7;
     border: none;
-    font-size: 24px;
+    font-size: 28px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 8px;
+}
+
+.adminnavbutton {
+    width: 266px;
 }
 
 .navbutton:hover {
-    color: white;
-    background-color: #006cb7;
+    color: rgba(0, 150, 255, 0.6);
+    /* background-color: #006cb7; */
 }
 
-.navbutton:active {
+/*.navbutton:active {
     color: #ebc46a;
-    border: #006cb7 inset 4px;
-}
+    border: #006cb7 solid 4px;
+    background-color: #006cb7;
+}*/
 
 #navbuttonselected {
     color: #ebc46a;
-    background-color: #006cb7;
-    border: #006cb7 inset 4px;
+    /* background-color: #006cb7;
+    border: #006cb7 solid 4px; */
 }
 
 button:focus {
@@ -96,10 +104,10 @@ body, html {
 
 #contentwrapper {
     padding: 15px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-#header {
+header {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -107,10 +115,10 @@ body, html {
     background-color: #006cb7;
     width: 100%;
     z-index: 2;
-    border-bottom: #ebc46a outset 3px;
+    /* border-bottom: black solid 3px; */
 }
 
-#footer {
+footer {
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -118,7 +126,7 @@ body, html {
     background-color: #006cb7;
     width: 100%;
     z-index: 2;
-    border-top: #ebc46a outset 3px;
+    /* border-top: black solid 3px; */
 }
 
 .residenceImage {
@@ -143,8 +151,8 @@ body, html {
 }
 
 .residenceWrapper {
-    border-top: #ebc46a outset 2px;
-    border-bottom: #ebc46a outset 2px;
+    border-top: gray solid 2px;
+    border-bottom: gray solid 2px;
 }
 
 .residenceTable {
@@ -186,7 +194,7 @@ body, html {
 #imageFocusDiv {
     display: none;
     z-index: 6;
-    border: #ebc46a outset 3px;
+    border: gray solid 2px;
     margin: auto;
     position: fixed;
     top: 50%;
@@ -209,9 +217,81 @@ body, html {
     right: 5px;
 }
 
+.directorInd {
+    background-color: #e9e9e9;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
 .directorBar {
     background-color: #006cb7;
     color: #ebc46a;
     width: 100%;
-    font-size: 24px
+    font-size: 24px;
+}
+
+#description {
+    background-image: url('../images/hsilogo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 494px 592px;
+    width: 780px;
+    height: 600px;
+    /* border-left: black solid 3px;
+    border-right: black solid 3px; */
+}
+
+#circle {
+    width: 300px;
+    height: 190px;
+    background: #e9e9e9;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 8px solid #006cb7;
+}
+
+.generalForm {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.adminFormWrapper {
+    text-align: center;
+}
+
+.adminForm {
+    display: inline-block;
+}
+
+.adminButton {
+    width: 100px;
+}
+
+.editButton {
+    background-color: #c8ffc8;
+}
+
+.deleteButton {
+    background-color: #ffc8c8;
+}
+
+.updateButton {
+    background-color: #c8c8ff;
+}
+
+.confirmButton {
+    width: 200px;
+}
+
+.adminWrapper {
+    width: 800px;
+    display: block;
+    margin: auto;
+}
+
+.alert {
+    text-align: center;
+    color: red;
 }

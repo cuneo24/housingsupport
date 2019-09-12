@@ -43,7 +43,19 @@
                 </td>
             </tr>
         </table>
+        <br>
+
+        <section class='adminFormWrapper'>
+            <form method='get' class='adminForm'>
+                <input type='submit' class='adminButton editButton' value='Edit'>
+            </form>
+
+            <form method='get' class='adminForm' action='/admin/residence/{{$residence->id}}/delconfirm'>
+                <input type='submit' class='adminButton deleteButton' value='Delete'>
+            </form>
+        </section>
 
     </div>
+
 </div>
 <br>

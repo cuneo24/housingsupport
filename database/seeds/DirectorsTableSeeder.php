@@ -28,7 +28,7 @@ class DirectorsTableSeeder extends Seeder
                 'Dorothy',
                 'La France',
                 'Clerk',
-                'Ms. La France was the Director of the Newburyport Public Library for many years. She currently serves in a leadership role on a number of local boards and financial institutions.'
+                'Ms. La France was the Director of the Newburyport Public Library for many years. She is currently returned and serves in a leadership role on a number of local boards.'
             ],
             [
                 'Lisa',
@@ -46,7 +46,7 @@ class DirectorsTableSeeder extends Seeder
                 'Paula',
                 'Newcomb',
                 'Executive Director',
-                'She has been involved in the development of private and public housing opportunities for most of her career, including fifteen years in compliance at the US Department of HUD.'
+                'Ms. Newcomb has been involved in the development of private and public affordable housing opportunities for forty years, including fifteen years in compliance at the US Department of HUD, and the city of Haverhill.'
             ]
         ];
 

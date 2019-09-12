@@ -14,44 +14,38 @@
 
 <div id='imageShade'></div>
 <div id='imageFocusDiv'>
-    <img id='residenceImageFocus' src='none'>
+    <img id='residenceImageFocus'>
     <img id='closeButton' src='images/closebutton.svg'>
 </div>
 
-<div id='header'>
-
-</div>
+<header>
+</header>
 
 <div id='mainwrapperfacade'></div>
 
 <div id='mainwrapper'>
     <div id='logobar'>
-        <img id='homelogo' src='images/hsilogo.svg'><br>
+        <div id='circle'>
+            <img id='homelogo' src='images/hsilogo.svg'><br>
+        </div>
         <span id='titlelogo'>Housing Support</span><br>
     </div>
 
-    <div id='navwrapper'>
-        <a href='/'>
-            <button class='navbutton'>Home</button>
-        </a>
-        <button class='navbutton'>About</button>
-        <a href='/directors'>
-            <button class='navbutton'>Directors</button>
-        </a>
-        <a href='/residences'>
-            <button class='navbutton'>Residences</button>
-        </a>
-        <button class='navbutton'>Affiliates</button>
-    </div>
-    <div id='contentwrapper'>
+    <nav class='navwrapper'>
+        <a class='navbutton' href='/'>Home</a>
+        <a class='navbutton' href='/directors'>Directors</a>
+        <a class='navbutton' href='/residences'>Residences</a>
+        <a class='navbutton' href='/partners'>Partners</a>
+    </nav>
+
+    <section id='contentwrapper'>
         @yield('content')
-    </div>
-</div>
-
-
-<div id='footer'>
+    </section>
 
 </div>
+
+<footer>
+</footer>
 
 </body>
 
