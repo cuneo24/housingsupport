@@ -21,7 +21,7 @@
 }*/
 
 body {
-    background-image: url('../images/brickbackground - color.png');
+    background-image: url('../images/brickbackground - bw.png');
     background-size: 800px 800px;
     background-attachment: fixed;
     z-index: -3;
