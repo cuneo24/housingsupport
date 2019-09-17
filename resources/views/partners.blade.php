@@ -5,7 +5,10 @@
 @endsection
 
 @section('content')
-    @foreach($partners as $partner)
-        @include('_partner')
-    @endforeach
+    <div class='dirpartwrapper'>
+        @foreach($partners as $partner)
+            @include('_partner')
+        @endforeach
+    </div>
+    <br>
 @endsection

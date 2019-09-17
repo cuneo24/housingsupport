@@ -27,14 +27,9 @@ class CreateResidencesTable extends Migration
             $table->string('zip');
             $table->string('year_acquired');
             $table->string('year_built');
-            $table->string('units');
-            $table->decimal('land_area','5','3');
+            $table->string('land_area');
             $table->string('living_area');
-            $table->string('zoning');
             $table->string('other');
-            $table->string('book');
-            $table->string('page');
-            $table->string('map_parcel');
             $table->boolean('hidden');
         });
     }

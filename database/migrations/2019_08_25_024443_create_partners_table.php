@@ -18,7 +18,6 @@ class CreatePartnersTable extends Migration
             $table->timestamps();
 
             $table->string('name');
-            $table->string('logo_url');
             $table->string('website_url');
             $table->text('description');
         });

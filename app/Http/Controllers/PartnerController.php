@@ -7,33 +7,38 @@ use App\Partner;
 
 class PartnerController extends Controller
 {
-    public function show(){
+    public function show()
+    {
         $partners = Partner::orderBy('name')->get();
+
         return view('partners')->with(['partners' => $partners]);
     }
 
-    public function showAdmin(){
+    public function showAdmin()
+    {
         $partners = Partner::orderBy('name')->get();
+
         return view('/admin/partners')->with(['partners' => $partners]);
     }
 
-    public function add(){
+    public function add()
+    {
         return view('admin/create_partner');
     }
 
-    function store(Request $request){
+    function store(Request $request)
+    {
         $partner = new Partner();
 
         $partner->name = $request->name;
-        $partner->logo_url = $request->logo_url;
         $partner->website_url = $request->website_url;
         $partner->description = $request->description;
 
         $partner->save();
 
-        $alert = $partner->name . ' has been successfully added.';
+        $alert = $partner->name . ' has been successfully added!';
 
-        return redirect('/admin/partners')->with(['alert' => $alert]);
+        return redirect('/admin/partners')->with(['alertUp' => $alert]);
     }
 
     public function delete($id)
@@ -43,12 +48,36 @@ class PartnerController extends Controller
         $alert = $partnerName . ' has been deleted.';
         $partner->destroy($id);
 
-        return redirect('/admin/partners')->with(['alert' => $alert]);
+        return redirect('/admin/partners')->with(['alertDown' => $alert]);
     }
 
-    public function delConfirm($id){
+    public function delConfirm($id)
+    {
         $partner = Partner::find($id);
         $alert = 'Are you sure you wish to delete ' . $partner->name . '?';
-        return view('/admin/delete_partner')->with(['partner' => $partner, 'alert' => $alert]);
+
+        return view('/admin/delete_partner')->with(['partner' => $partner, 'alertDown' => $alert]);
+    }
+
+    public function edit($id)
+    {
+        $partner = Partner::find($id);
+
+        return view('/admin/edit_partner')->with(['partner' => $partner]);
+    }
+
+    public function update(Request $request, $id)
+    {
+        $partner = Partner::find($id);
+
+        $partner->name = $request->name;
+        $partner->website_url = $request->website_url;
+        $partner->description = $request->description;
+
+        $partner->save();
+
+        $alert = $partner->name . ' has been successfully updated!';
+
+        return redirect('/admin/partners')->with(['alertUp' => $alert]);
     }
 }

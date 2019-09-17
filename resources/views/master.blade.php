@@ -11,7 +11,6 @@
 
 <body>
 
-
 <div id='imageShade'></div>
 <div id='imageFocusDiv'>
     <img id='residenceImageFocus'>
@@ -28,7 +27,7 @@
         <div id='circle'>
             <img id='homelogo' src='images/hsilogo.svg'><br>
         </div>
-        <span id='titlelogo'>Housing Support</span><br>
+        <br><span class='titlelogo'>Housing Support</span><br>
     </div>
 
     <nav class='navwrapper'>

@@ -34,21 +34,22 @@ class ResidenceController extends Controller
         $residence->zip = $request->zip;
         $residence->year_acquired = $request->year_acquired;
         $residence->year_built = $request->year_built;
-        $residence->units = $request->units;
         $residence->land_area = $request->land_area;
         $residence->living_area = $request->living_area;
-        $residence->zoning = $request->zoning;
         $residence->other = $request->other;
-        $residence->book = $request->book;
-        $residence->page = $request->page;
-        $residence->map_parcel = $request->map_parcel;
-        $residence->hidden = $request->hidden;
+
+        if(array_key_exists('hidden', $request->toArray())){
+            $residence->hidden = 1;
+        }
+        else{
+            $residence->hidden = 0;
+        }
 
         $residence->save();
 
-        $alert = $residence->name . ' has been successfully added.';
+        $alert = $residence->name . ' has been successfully added!';
 
-        return redirect('/admin/residences')->with(['alert' => $alert]);
+        return redirect('/admin/residences')->with(['alertUp' => $alert]);
     }
 
     public function delete($id)
@@ -58,12 +59,50 @@ class ResidenceController extends Controller
         $alert = $residenceName . ' has been deleted.';
         $residence->destroy($id);
 
-        return redirect('/admin/residences')->with(['alert' => $alert]);
+        return redirect('/admin/residences')->with(['alertDown' => $alert]);
     }
 
     public function delConfirm($id){
         $residence = Residence::find($id);
         $alert = 'Are you sure you wish to delete ' . $residence->name . '?';
-        return view('/admin/delete_residence')->with(['residence' => $residence, 'alert' => $alert]);
+        return view('/admin/delete_residence')->with(['residence' => $residence, 'alertDown' => $alert]);
+    }
+
+    public function edit($id)
+    {
+        $residence = Residence::find($id);
+
+        return view('/admin/edit_residence')->with(['residence' => $residence]);
+    }
+
+    public function update(Request $request, $id){
+        $residence = Residence::find($id);
+
+        $residence->name = $request->name;
+        $residence->picture_url = $request->picture_url;
+        $residence->program = $request->program;
+        $residence->provider = $request->provider;
+        $residence->street = $request->street;
+        $residence->city = $request->city;
+        $residence->state = $request->state;
+        $residence->zip = $request->zip;
+        $residence->year_acquired = $request->year_acquired;
+        $residence->year_built = $request->year_built;
+        $residence->land_area = $request->land_area;
+        $residence->living_area = $request->living_area;
+        $residence->other = $request->other;
+
+        if(array_key_exists('hidden', $request->toArray())){
+            $residence->hidden = 1;
+        }
+        else{
+            $residence->hidden = 0;
+        }
+
+        $residence->save();
+
+        $alert = $residence->name . ' has been successfully updated!';
+
+        return redirect('/admin/residences')->with(['alertUp' => $alert]);
     }
 }

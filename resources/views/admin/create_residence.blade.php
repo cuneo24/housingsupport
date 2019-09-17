@@ -15,16 +15,12 @@
             ZIP:<br><input type='text' name='zip'><br><br>
             Year Acquired:<br><input type='text' name='year_acquired'><br><br>
             Year Built:<br><input type='text' name='year_built'><br><br>
-            Units:<br><input type='text' name='units'><br><br>
             Land Area:<br><input type='text' name='land_area'><br><br>
             Living Area:<br><input type='text' name='living_area'><br><br>
-            Zoning:<br><input type='text' name='zoning'><br><br>
             Other:<br><textarea rows='4' cols='50' name='other'></textarea><br><br>
-            Book:<br><input type='text' name='book'><br><br>
-            Page:<br><input type='text' name='page'><br><br>
-            Map Parcel:<br><input type='text' name='map_parcel'><br><br>
             Hidden:<br><input type='checkbox' name='hidden'><br><br>
-            <input type='submit' value='Submit'>
+            <input class='confirmButton updateButton' type='submit' value='Create'>
+            <input type='button' class='confirmButton editButton' value='Cancel' onclick="location.href='/admin/residences';">
         </form>
     </div>
 @endsection

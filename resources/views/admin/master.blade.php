@@ -10,8 +10,8 @@
 </head>
 
 <body>
+<span class='titlelogo'>Admin Panel</span><br>
 <div id='mainwrapperfacade'></div>
-
 <br>
 
 <nav class='navwrapper'>
@@ -24,15 +24,26 @@
 
 <section class='adminWrapper'>
 
-    <section class='alert'>
-        @if(isset($alert))
-            <h2>{{$alert}}</h2>
+    <section class='alertDown'>
+        @if(isset($alertDown))
+            <h2>{{$alertDown}}</h2>
         @endif
 
-        @if(session('alert'))
-            <h2>{{session('alert')}}</h2>
+        @if(session('alertDown'))
+            <h2>{{session('alertDown')}}</h2>
         @endif
     </section>
+
+    <section class='alertUp'>
+        @if(isset($alertUp))
+            <h2>{{$alertUp}}</h2>
+        @endif
+
+        @if(session('alertUp'))
+            <h2>{{session('alertUp')}}</h2>
+        @endif
+    </section>
+
 
     @yield('content')
 

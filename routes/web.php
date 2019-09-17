@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function(){
+Route::get('/', function () {
     return view('index');
 });
 
@@ -21,7 +21,7 @@ Route::get('/directors', 'DirectorController@show');
 
 Route::get('/partners', 'PartnerController@show');
 
-Route::get('/about', function(){
+Route::get('/about', function () {
     return view('about');
 });
 

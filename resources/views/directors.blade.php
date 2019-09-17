@@ -5,7 +5,9 @@
 @endsection
 
 @section('content')
-    @foreach($directors as $director)
-        @include('_director')
-    @endforeach
+    <div class='dirpartwrapper'>
+        @foreach($directors as $director)
+            @include('_director')
+        @endforeach
+    </div>
 @endsection

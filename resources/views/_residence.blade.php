@@ -1,4 +1,4 @@
-<div class='residenceWrapper' style='background-color: #e9e9e9'>
+<div class='residenceWrapper'>
     <img class='residenceImage' alt='{{$residence->name}}' src='/{{$residence->picture_url}}'>
     <div class='residenceBar'>
         <span class='residenceTitle'>{{$residence->name}}</span><br>
@@ -45,5 +45,6 @@
         </table>
 
     </div>
+
 </div>
 <br>

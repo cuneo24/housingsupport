@@ -7,9 +7,9 @@
             {{method_field('DELETE')}}
             <input type='submit' class='confirmButton deleteButton' value='Yes'>
         </form>
-        <a href='/admin/partners'>
-            <button class='confirmButton editButton'>No</button>
-        </a>
+        <form method='get' action='/admin/partners' class='adminForm'>
+            <button class='confirmButton editButton'>Cancel</button>
+        </form>
     </section>
     <br><br>
     @include('_partner')

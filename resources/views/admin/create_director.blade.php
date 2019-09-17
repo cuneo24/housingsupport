@@ -9,7 +9,8 @@
             Last name:<br><input type='text' name='lname'><br><br>
             Position:<br><input type='text' name='position'><br><br>
             Description:<br><textarea rows='4' cols='50' name='description'></textarea><br><br>
-            <input type='submit' value='Submit'>
+            <input class='confirmButton updateButton' type='submit' value='Create'>
+            <input type='button' class='confirmButton editButton' value='Cancel' onclick="location.href='/admin/directors';">
         </form>
     </div>
 @endsection

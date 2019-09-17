@@ -5,7 +5,13 @@
 @endsection
 
 @section('content')
-    @foreach($directors as $director)
-        @include('admin/_director')
-    @endforeach
+    <form method='get' action='/admin/director/add' class='generalForm confirmButton'>
+        <button class='confirmButton editButton'>Create New</button>
+    </form>
+    <br>
+    <div class='dirpartwrapper'>
+        @foreach($directors as $director)
+            @include('admin/_director')
+        @endforeach
+    </div>
 @endsection

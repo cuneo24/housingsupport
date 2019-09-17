@@ -23,14 +23,9 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1992',
                 '1811',
-                '30 SRO',
                 '.068',
                 '7,453 sq. ft',
-                'CB',
                 '27 bedrooms, 8 full bathrooms, 4.5 bathrooms, common areas, a meeting room, and a kitchen',
-                '11302',
-                '466',
-                '52/190',
                 '0'
             ],
             [
@@ -44,14 +39,9 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1991',
                 '1850',
-                'Dormitory',
                 '1.51',
                 '7,728 sq. ft',
-                'R20',
                 '14 bedrooms, 3.5 bathrooms, and 1 kitchen. The property is the birthplace of Josiah Bartlett in 1730.',
-                '10917',
-                '3',
-                '77/41',
                 '0'
             ],
             [
@@ -65,14 +55,9 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1991',
                 '1880',
-                '3',
                 '1.51',
                 '2,910 sq. ft',
-                'R20',
                 '3 two-bedroom apartments',
-                '10917',
-                '3',
-                '77/41',
                 '0'
             ],
             [
@@ -86,14 +71,9 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1991',
                 '2001',
-                '1',
                 '1.51',
                 '2,294 sq. ft',
-                'R20',
                 '1 unit, 5 bedrooms, 2.5 bathrooms and 1 kitchen',
-                '10917',
-                '3',
-                '77/41',
                 '0'
             ],
             [
@@ -107,14 +87,9 @@ class ResidencesTableSeeder extends Seeder
                 '01835',
                 '1992',
                 '1887',
-                '10+ Comm',
                 '0.21',
                 '8,826 sq. ft',
-                'N/A',
                 '10 total bedroom(s), 10 total baths on two floors, with a commercial tenant on floor one, 3 total half baths',
-                '18958',
-                '136',
-                '700-628-10',
                 '0'
             ],
             [
@@ -128,14 +103,9 @@ class ResidencesTableSeeder extends Seeder
                 '01835',
                 '1994',
                 '1900',
-                '3',
                 '.181',
                 '2,925 sq. ft',
-                'N/A',
                 '4 bedrooms, 2 units, 3 baths',
-                '12818',
-                '334',
-                '707-657-9',
                 '0'
             ],
             [
@@ -149,14 +119,9 @@ class ResidencesTableSeeder extends Seeder
                 '01843',
                 '1997',
                 'Rebuilt 2009',
-                '10',
                 '.11',
                 '10,347 sq. ft',
-                'R3',
                 '12 bedroom unit with nine one-bedroom units and one commercial space',
-                '4871',
-                '345',
-                '102_0_16_0',
                 '0'
             ],
             [
@@ -170,14 +135,9 @@ class ResidencesTableSeeder extends Seeder
                 '01843',
                 '2002',
                 '2004',
-                '10',
                 '.11',
                 '9,234 sq. ft',
-                'R3',
                 'One-bedroom and 2-bedroom units.',
-                'N/A',
-                'N/A',
-                '102_0_16_0',
                 '0'
             ],
             [
@@ -191,14 +151,9 @@ class ResidencesTableSeeder extends Seeder
                 '01841',
                 '1993',
                 '1900',
-                '3',
                 '.114',
                 '4,188 sq. ft',
-                'R3',
                 '3 units, 12 bedrooms, 3 bathrooms and kitchens',
-                '3962',
-                '165',
-                ': 90_0_64_0',
                 '0'
             ],
             [
@@ -212,14 +167,9 @@ class ResidencesTableSeeder extends Seeder
                 '01841',
                 '1995',
                 'N/A',
-                '0',
                 '.088',
                 'N/A',
-                'R3',
                 'N/A',
-                '4213',
-                '189',
-                '90_0_65_0',
                 '1'
             ]
 
@@ -238,15 +188,10 @@ class ResidencesTableSeeder extends Seeder
             $residence->zip = $residenceData[7];
             $residence->year_acquired = $residenceData[8];
             $residence->year_built = $residenceData[9];
-            $residence->units = $residenceData[10];
-            $residence->land_area = $residenceData[11];
-            $residence->living_area = $residenceData[12];
-            $residence->zoning = $residenceData[13];
-            $residence->other = $residenceData[14];
-            $residence->book = $residenceData[15];
-            $residence->page = $residenceData[16];
-            $residence->map_parcel = $residenceData[17];
-            $residence->hidden = $residenceData[18];
+            $residence->land_area = $residenceData[10];
+            $residence->living_area = $residenceData[11];
+            $residence->other = $residenceData[12];
+            $residence->hidden = $residenceData[13];
 
             $residence->save();
         }

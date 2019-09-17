@@ -31,25 +31,25 @@ class DirectorController extends Controller
 
         $director->save();
 
-        $alert = $director->name . ' has been successfully added.';
+        $alert = $director->fname . ' ' . $director->lname . ' has been successfully added!';
 
-        return redirect('/admin/directors')->with(['alert' => $alert]);
+        return redirect('/admin/directors')->with(['alertUp' => $alert]);
     }
 
     public function delete($id)
     {
         $director = Director::find($id);
-        $directorName = $director->fname . $director->lname;
+        $directorName = $director->fname . ' ' . $director->lname;
         $alert = $directorName . ' has been deleted.';
         $director->destroy($id);
 
-        return redirect('/admin/directors')->with(['alert' => $alert]);
+        return redirect('/admin/directors')->with(['alertDown' => $alert]);
     }
 
     public function delConfirm($id){
         $director = Director::find($id);
         $alert = 'Are you sure you wish to delete ' . $director->fname . ' ' . $director->lname . '?';
-        return view('/admin/delete_director')->with(['director' => $director, 'alert' => $alert]);
+        return view('/admin/delete_director')->with(['director' => $director, 'alertDown' => $alert]);
     }
 
     public function edit($id){
@@ -57,12 +57,18 @@ class DirectorController extends Controller
         return view('/admin/edit_director')->with(['director' => $director]);
     }
 
-    public function editConfirm($id){
-        $director = Director::find($id);
-        $alert = 'Are you sure you wish to save these changes to ' . $director->fname . ' ' . $director->lname . '?';
-        return view('/admin/edit_director')->with(['director' => $director, 'alert' => $alert]);
-    }
-
     public function update(Request $request, $id){
+        $director = Director::find($id);
+
+        $director->fname = $request->fname;
+        $director->lname = $request->lname;
+        $director->position = $request->position;
+        $director->description = $request->description;
+
+        $director->save();
+
+        $alert = $director->fname . ' ' . $director->lname . ' has been successfully updated!';
+
+        return redirect('/admin/directors')->with(['alertUp' => $alert]);
     }
 }

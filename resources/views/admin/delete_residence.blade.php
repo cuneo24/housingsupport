@@ -7,10 +7,10 @@
             {{method_field('DELETE')}}
             <input type='submit' class='confirmButton deleteButton' value='Yes'>
         </form>
-        <a href='/admin/residences'>
-            <button class='confirmButton editButton'>No</button>
-        </a>
+        <form method='get' action='/admin/residences' class='adminForm'>
+            <button class='confirmButton editButton'>Cancel</button>
+        </form>
     </section>
     <br><br>
-    @include('_residence')
+    @include('admin/_residence')
 @endsection

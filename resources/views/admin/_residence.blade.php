@@ -1,5 +1,5 @@
-<div class='residenceWrapper' style='background-color: #e9e9e9'>
-    <img class='residenceImage' alt='{{$residence->name}}' src='/{{$residence->picture_url}}'>
+<div class='residenceWrapper'>
+    <img class='residenceImageAdmin' alt='{{$residence->name}}' src='/{{$residence->picture_url}}'>
     <div class='residenceBar'>
         <span class='residenceTitle'>{{$residence->name}}</span><br>
         <span class='twelvePXBuffer'>{{$residence->street}}, {{$residence->city}} {{$residence->state}} {{$residence->zip}}</span>
@@ -46,7 +46,7 @@
         <br>
 
         <section class='adminFormWrapper'>
-            <form method='get' class='adminForm'>
+            <form method='get' class='adminForm' action='/admin/residence/{{$residence->id}}/edit'>
                 <input type='submit' class='adminButton editButton' value='Edit'>
             </form>
 
