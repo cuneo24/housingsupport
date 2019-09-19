@@ -6,7 +6,7 @@
 
 @section('content')
     <div id='description'>
-        <h2 class='titlelogo' style='text-align: center;'>Housing Support, Inc.</h2>
+        <em><h2 class='titlelogo' style='text-align: center;'><q>Keeping the <span style='color: #ebc46a;'>lights</span> on since 1990.</q></h2></em>
         Housing Support Inc. was incorporated in 1990 as a vehicle to purchase a shelter for women and their children located in Amesbury Ma. In 1994, the bylaws were changed to broaden the scope of the agency and to add community leaders and user representatives to the board. HSI owns and manages properties providing housing to disabled very low income individuals in Amesbury, Haverhill, and Lawrence, MA.
         <br><br>
         Since then the corporation has developed an additional eight properties in the communities of Haverhill, Lawrence, and Amesbury, which offer supportive housing to homeless and/or disabled individuals. The projects were successfully completed despite challenges presented by difficult areas for the development and complex methods of competitive financing and public grant awards. HSI's real estate portfolio has a value of over $ 8,000,000. Over $1,500,000 in public grants has been awarded along with rental subsidies of $9,000,000 over the next twenty years have been guaranteed

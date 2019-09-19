@@ -10,9 +10,13 @@
 </head>
 
 <body>
-<span class='titlelogo'>Admin Panel</span><br>
+
 <div id='mainwrapperfacade'></div>
-<br>
+
+<div id='logobar'>
+    <br><span class='titlelogo'>Admin Panel</span><br>
+    <!-- <br><span class='titlelogo'>Housing Support</span><br> -->
+</div>
 
 <nav class='navwrapper'>
     <a class='navbutton adminnavbutton' href='/admin/directors'>Directors*</a>
@@ -23,7 +27,6 @@
 <br>
 
 <section class='adminWrapper'>
-
     <section class='alertDown'>
         @if(isset($alertDown))
             <h2>{{$alertDown}}</h2>
