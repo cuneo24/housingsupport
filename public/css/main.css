@@ -385,3 +385,24 @@ h1, h2 {
 .footerbutton:hover {
     color: rgb(255, 229, 93);
 }
+
+#logout {
+    text-align: center;
+}
+
+#login {
+    text-decoration:none;
+    color: #006cb7;
+}
+
+#login:hover {
+    color: rgba(0, 150, 255, 0.6);
+}
+
+.container {
+    text-align: center;
+}
+
+.form-group {
+    padding: .5rem;
+}

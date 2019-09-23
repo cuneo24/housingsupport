@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests;
 use App\Residence;
+
 
 class ResidenceController extends Controller
 {
@@ -24,8 +26,12 @@ class ResidenceController extends Controller
     public function store(Request $request){
         $residence = new Residence();
 
+        $image = $request->file('picture_url');
+        $new_name = $image->getClientOriginalName();
+        $image->move(public_path('images'), $new_name);
+
         $residence->name = $request->name;
-        $residence->picture_url = $request->picture_url;
+        $residence->picture_url = 'images/' . $image->getClientOriginalName();
         $residence->program = $request->program;
         $residence->provider = $request->provider;
         $residence->street = $request->street;
@@ -78,8 +84,15 @@ class ResidenceController extends Controller
     public function update(Request $request, $id){
         $residence = Residence::find($id);
 
+        if(is_null($request->picture_url) == false)
+        {
+            $image = $request->file('picture_url');
+            $new_name = $image->getClientOriginalName();
+            $image->move(public_path('images'), $new_name);
+            $residence->picture_url = 'images/' . $image->getClientOriginalName();
+        }
+
         $residence->name = $request->name;
-        $residence->picture_url = $request->picture_url;
         $residence->program = $request->program;
         $residence->provider = $request->provider;
         $residence->street = $request->street;
@@ -105,4 +118,5 @@ class ResidenceController extends Controller
 
         return redirect('/admin/residences')->with(['alertUp' => $alert]);
     }
+
 }

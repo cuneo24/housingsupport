@@ -16,9 +16,8 @@ class CreateResidencesTable extends Migration
         Schema::create('residences', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-
             $table->string('name');
-            $table->string('picture_url');
+            $table->string('picture_url')->nullable();
             $table->text('program');
             $table->string('provider');
             $table->string('street');

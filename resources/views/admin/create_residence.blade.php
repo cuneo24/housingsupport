@@ -3,10 +3,12 @@
 @section('content')
     <div class='generalForm'>
         <h2>Add New Residence</h2>
-        <form method='post' action='store'>
+        <form method='post' action='store' enctype="multipart/form-data">
             {{csrf_field()}}
             Name:<br><input type='text' name='name'><br><br>
-            Picture URL:<br><input type='text' name='picture_url'><br><br>
+
+            Picture:<br><input type='file' name='picture_url'><br><br>
+
             Program:<br><textarea rows='4' cols='50' name='program'></textarea><br><br>
             Provider:<br><textarea rows='4' cols='50' name='provider'></textarea><br><br>
             Street:<br><input type='text' name='street'><br><br>

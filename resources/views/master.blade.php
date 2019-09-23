@@ -3,6 +3,7 @@
 <html lang='en' xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <meta charset="UTF-8">
     <title id='title'>@yield('title') - Housing Support</title>
     <link rel='stylesheet' type='text/css' href='/css/main.css'>
     <script type='text/javascript' src='/js/main.js'></script>

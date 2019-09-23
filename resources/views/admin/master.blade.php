@@ -1,8 +1,13 @@
+<?php
+$user = request()->user();
+?>
+
 <!DOCTYPE html>
 
 <html lang='en' xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
+    <meta charset="UTF-8">
     <title id='title'>@yield('title')</title>
     <link rel='stylesheet' type='text/css' href='/css/main.css'>
     <script type='text/javascript' src='/js/main.js'></script>
@@ -23,6 +28,13 @@
     <a class='navbutton adminnavbutton' href='/admin/residences'>Residences*</a>
     <a class='navbutton adminnavbutton' href='/admin/partners'>Partners*</a>
 </nav>
+
+<br>
+
+<form method='POST' id='logout' action='/logout'>
+    {{ csrf_field() }}
+    <a id='login' href='#' onClick='document.getElementById("logout").submit();'>Logout</a>
+</form>
 
 <br>
 

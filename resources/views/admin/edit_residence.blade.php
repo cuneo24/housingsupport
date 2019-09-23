@@ -3,11 +3,16 @@
 @section('content')
     <div class='generalForm'>
         <h2>Edit {{$residence->name}}</h2>
-        <form method='post' action='update'>
+        <form method='post' action='update' enctype="multipart/form-data">
             {{csrf_field()}}
             {{method_field('PUT')}}
             Name:<br><input type='text' name='name' value='{{$residence->name}}'><br><br>
-            Picture URL:<br><input type='text' name='picture_url' value='{{$residence->picture_url}}'><br><br>
+
+            Current Picture:<br>
+            <img class='residenceImageAdmin' style='float:none;' src='/{{$residence->picture_url}}' alt='{{$residence->name}}'><br><br>
+
+            New Picture:<br><input type='file' name='picture_url'><br><br>
+
             Program:<br><textarea rows='4' cols='50' name='program'>{{$residence->program}}</textarea><br><br>
             Provider:<br><textarea rows='4' cols='50' name='provider'>{{$residence->provider}}</textarea><br><br>
             Street:<br><input type='text' name='street' value='{{$residence->street}}'><br><br>

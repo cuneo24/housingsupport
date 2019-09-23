@@ -12,5 +12,5 @@
         </form>
     </section>
     <br><br>
-    @include('admin/_residence')
+    @include('../_residence')
 @endsection

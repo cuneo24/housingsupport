@@ -25,30 +25,36 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::get('/admin/directors', 'DirectorController@showAdmin');
-Route::get('/admin/partners', 'PartnerController@showAdmin');
-Route::get('/admin/residences', 'ResidenceController@showAdmin');
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/admin/directors', 'DirectorController@showAdmin');
+    Route::get('/admin/partners', 'PartnerController@showAdmin');
+    Route::get('/admin/residences', 'ResidenceController@showAdmin');
 
-Route::get('/admin/director/add', 'DirectorController@add');
-Route::get('/admin/partner/add', 'PartnerController@add');
-Route::get('/admin/residence/add', 'ResidenceController@add');
+    Route::get('/admin/director/add', 'DirectorController@add');
+    Route::get('/admin/partner/add', 'PartnerController@add');
+    Route::get('/admin/residence/add', 'ResidenceController@add');
 
-Route::get('/admin/director/{id}/edit', 'DirectorController@edit');
-Route::get('/admin/partner/{id}/edit', 'PartnerController@edit');
-Route::get('/admin/residence/{id}/edit', 'ResidenceController@edit');
+    Route::get('/admin/director/{id}/edit', 'DirectorController@edit');
+    Route::get('/admin/partner/{id}/edit', 'PartnerController@edit');
+    Route::get('/admin/residence/{id}/edit', 'ResidenceController@edit');
 
-Route::get('/admin/director/{id}/delconfirm', 'DirectorController@delConfirm');
-Route::get('/admin/partner/{id}/delconfirm', 'PartnerController@delConfirm');
-Route::get('/admin/residence/{id}/delconfirm', 'ResidenceController@delConfirm');
+    Route::get('/admin/director/{id}/delconfirm', 'DirectorController@delConfirm');
+    Route::get('/admin/partner/{id}/delconfirm', 'PartnerController@delConfirm');
+    Route::get('/admin/residence/{id}/delconfirm', 'ResidenceController@delConfirm');
 
-Route::post('/admin/director/store', 'DirectorController@store');
-Route::post('/admin/partner/store', 'PartnerController@store');
-Route::post('/admin/residence/store', 'ResidenceController@store');
+    Route::post('/admin/director/store', 'DirectorController@store');
+    Route::post('/admin/partner/store', 'PartnerController@store');
+    Route::post('/admin/residence/store', 'ResidenceController@store');
 
-Route::put('/admin/director/{id}/update', 'DirectorController@update');
-Route::put('/admin/partner/{id}/update', 'PartnerController@update');
-Route::put('/admin/residence/{id}/update', 'ResidenceController@update');
+    Route::put('/admin/director/{id}/update', 'DirectorController@update');
+    Route::put('/admin/partner/{id}/update', 'PartnerController@update');
+    Route::put('/admin/residence/{id}/update', 'ResidenceController@update');
 
-Route::delete('/admin/director/{id}/delete', 'DirectorController@delete');
-Route::delete('/admin/partner/{id}/delete', 'PartnerController@delete');
-Route::delete('/admin/residence/{id}/delete', 'ResidenceController@delete');
+    Route::delete('/admin/director/{id}/delete', 'DirectorController@delete');
+    Route::delete('/admin/partner/{id}/delete', 'PartnerController@delete');
+    Route::delete('/admin/residence/{id}/delete', 'ResidenceController@delete');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
