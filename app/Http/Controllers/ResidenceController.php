@@ -27,17 +27,8 @@ class ResidenceController extends Controller
         $residence = new Residence();
 
         $image = $request->file('picture_url');
-        if(file_exists($image->getClientOriginalName())){
-            unlink($image->getClientOriginalName());
-            $new_name = $image->getClientOriginalName();
-            $image->move(public_path('images'), $new_name);
-        }
-
-        else {
-            $new_name = $image->getClientOriginalName();
-            $image->move(public_path('images'), $new_name);
-        }
-
+        $new_name = $image->getClientOriginalName();
+        $image->move(public_path('images'), $new_name);
 
         $residence->name = $request->name;
         $residence->picture_url = 'images/' . $image->getClientOriginalName();
