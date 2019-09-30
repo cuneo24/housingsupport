@@ -23,7 +23,7 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1992',
                 '1811',
-                '.068',
+                '.068 acres',
                 '7,453 sq. ft',
                 '27 bedrooms, 8 full bathrooms, 4.5 bathrooms, common areas, a meeting room, and a kitchen',
                 '0'
@@ -39,7 +39,7 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1991',
                 '1850',
-                '1.51',
+                '1.51 acres',
                 '7,728 sq. ft',
                 '14 bedrooms, 3.5 bathrooms, and 1 kitchen. The property is the birthplace of Josiah Bartlett in 1730.',
                 '0'
@@ -55,7 +55,7 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1991',
                 '1880',
-                '1.51',
+                '1.51 acres',
                 '2,910 sq. ft',
                 '3 two-bedroom apartments',
                 '0'
@@ -71,7 +71,7 @@ class ResidencesTableSeeder extends Seeder
                 '01913',
                 '1991',
                 '2001',
-                '1.51',
+                '1.51 acres',
                 '2,294 sq. ft',
                 '1 unit, 5 bedrooms, 2.5 bathrooms and 1 kitchen',
                 '0'
@@ -87,7 +87,7 @@ class ResidencesTableSeeder extends Seeder
                 '01835',
                 '1992',
                 '1887',
-                '0.21',
+                '0.21 acres',
                 '8,826 sq. ft',
                 '10 total bedroom(s), 10 total baths on two floors, with a commercial tenant on floor one, 3 total half baths',
                 '0'
@@ -103,7 +103,7 @@ class ResidencesTableSeeder extends Seeder
                 '01835',
                 '1994',
                 '1900',
-                '.181',
+                '.181 acres',
                 '2,925 sq. ft',
                 '4 bedrooms, 2 units, 3 baths',
                 '0'
@@ -119,7 +119,7 @@ class ResidencesTableSeeder extends Seeder
                 '01843',
                 '1997',
                 'Rebuilt 2009',
-                '.11',
+                '.11 acres',
                 '10,347 sq. ft',
                 '12 bedroom unit with nine one-bedroom units and one commercial space',
                 '0'
@@ -135,7 +135,7 @@ class ResidencesTableSeeder extends Seeder
                 '01843',
                 '2002',
                 '2004',
-                '.11',
+                '.11 acres',
                 '9,234 sq. ft',
                 'One-bedroom and 2-bedroom units.',
                 '0'
@@ -151,7 +151,7 @@ class ResidencesTableSeeder extends Seeder
                 '01841',
                 '1993',
                 '1900',
-                '.114',
+                '.114 acres',
                 '4,188 sq. ft',
                 '3 units, 12 bedrooms, 3 bathrooms and kitchens',
                 '0'
@@ -167,7 +167,7 @@ class ResidencesTableSeeder extends Seeder
                 '01841',
                 '1995',
                 'N/A',
-                '.088',
+                '.088 acres',
                 'N/A',
                 'N/A',
                 '1'

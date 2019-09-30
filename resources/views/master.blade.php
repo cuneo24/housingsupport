@@ -4,6 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords"
+          content="housing, support, inc, newburyport, haverhill, lawrence, amesbury, ma, massachusetts">
+    <meta name="description" content="Housing Support, Inc. Newburyport, MA official website">
     <title id='title'>@yield('title') - Housing Support</title>
     <link rel='stylesheet' type='text/css' href='/css/main.css'>
     <script type='text/javascript' src='/js/main.js'></script>
@@ -17,25 +20,27 @@
         <q><em>Housing Support, Inc. Keeping the lights on since 1990.</em></q>
     </header>
 
-    <div id='imageShade'></div>
-    <div id='imageFocusDiv'>
-        <img id='residenceImageFocus'>
-        <img id='closeButton' src='images/closebutton.svg'>
-    </div>
-
-    <div id='logobar'>
-        <div id='circle'>
-            <img id='homelogo' src='images/hsilogo.svg'>Housing Support, Inc.<br>
+    <div id='headerwrapper'>
+        <div id='imageShade'></div>
+        <div id='imageFocusDiv'>
+            <img id='residenceImageFocus'>
+            <img id='closeButton' src='images/closebutton.svg'>
         </div>
-    </div>
 
-    <nav class='navwrapper'>
-        <a class='navbutton' href='/'>Home</a>
-        <a class='navbutton' href='/about'>About</a>
-        <a class='navbutton' href='/directors'>Directors</a>
-        <a class='navbutton' href='/residences'>Residences</a>
-        <a class='navbutton' href='/partners'>Partners</a>
-    </nav>
+        <div id='logobar'>
+            <div id='circle'>
+                <img id='homelogo' src='images/hsilogo.svg'>Housing Support, Inc.<br>
+            </div>
+        </div>
+
+        <nav class='navwrapper'>
+            <a class='navbutton' href='/'>Home</a>
+            <a class='navbutton' href='/about'>About</a>
+            <a class='navbutton' href='/directors'>Directors</a>
+            <a class='navbutton' href='/residences'>Residences</a>
+            <a class='navbutton' href='/partners'>Partners</a>
+        </nav>
+    </div>
 
     <div id='mainwrapperfacade'></div>
 

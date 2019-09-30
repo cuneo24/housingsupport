@@ -8,7 +8,7 @@
     <div class='residenceDiv'>
         <strong>Program</strong><br>
         {{$residence->program}}<br><br>
-        <strong>Provider</strong><br>
+        <strong>Partner</strong><br>
         {{$residence->provider}}<br><br>
         <strong>Other</strong><br>
         {{$residence->other}}<br><br>
@@ -36,7 +36,7 @@
                     {{$residence->year_acquired}}
                 </td>
                 <td class='residenceTable'>
-                    {{$residence->land_area}} acres
+                    {{$residence->land_area}}
                 </td>
                 <td class='residenceTable'>
                     {{$residence->living_area}}

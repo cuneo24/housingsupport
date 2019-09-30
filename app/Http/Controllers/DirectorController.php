@@ -24,10 +24,18 @@ class DirectorController extends Controller
     public function store(Request $request){
         $director = new Director();
 
-        $director->fname = $request->fname;
-        $director->lname = $request->lname;
-        $director->position = $request->position;
-        $director->description = $request->description;
+        $arrayD = [$request->fname, $request->lname, $request->position, $request->description];
+
+        for($i=0; $i<count($arrayD); $i++){
+            if(is_null($arrayD[$i])){
+                $arrayD[$i] = 'N/A';
+            }
+        }
+
+        $director->fname = $arrayD[0];
+        $director->lname = $arrayD[1];
+        $director->position = $arrayD[2];
+        $director->description = $arrayD[3];
 
         $director->save();
 
@@ -60,10 +68,18 @@ class DirectorController extends Controller
     public function update(Request $request, $id){
         $director = Director::find($id);
 
-        $director->fname = $request->fname;
-        $director->lname = $request->lname;
-        $director->position = $request->position;
-        $director->description = $request->description;
+        $arrayD = [$request->fname, $request->lname, $request->position, $request->description];
+
+        for($i=0; $i<count($arrayD); $i++){
+            if(is_null($arrayD[$i])){
+                $arrayD[$i] = 'N/A';
+            }
+        }
+
+        $director->fname = $arrayD[0];
+        $director->lname = $arrayD[1];
+        $director->position = $arrayD[2];
+        $director->description = $arrayD[3];
 
         $director->save();
 

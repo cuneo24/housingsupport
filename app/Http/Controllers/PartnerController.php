@@ -30,9 +30,17 @@ class PartnerController extends Controller
     {
         $partner = new Partner();
 
-        $partner->name = $request->name;
-        $partner->website_url = $request->website_url;
-        $partner->description = $request->description;
+        $arrayP = [$request->name, $request->website_url, $request->description];
+
+        for($i=0; $i<count($arrayP); $i++){
+            if(is_null($arrayP[$i])){
+                $arrayP[$i] = 'N/A';
+            }
+        }
+
+        $partner->name = $arrayP[0];
+        $partner->website_url = $arrayP[1];
+        $partner->description = $arrayP[2];
 
         $partner->save();
 
@@ -70,9 +78,17 @@ class PartnerController extends Controller
     {
         $partner = Partner::find($id);
 
-        $partner->name = $request->name;
-        $partner->website_url = $request->website_url;
-        $partner->description = $request->description;
+        $arrayP = [$request->name, $request->website_url, $request->description];
+
+        for($i=0; $i<count($arrayP); $i++){
+            if(is_null($arrayP[$i])){
+                $arrayP[$i] = 'N/A';
+            }
+        }
+
+        $partner->name = $arrayP[0];
+        $partner->website_url = $arrayP[1];
+        $partner->description = $arrayP[2];
 
         $partner->save();
 
