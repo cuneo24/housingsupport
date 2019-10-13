@@ -40,10 +40,11 @@ window.onload = function(){
     });
 
     $('#closeButton').hover(function(){
-        $('#closeButton').attr('src', 'images/closebuttonhover.svg');
+        $('#closeButton').attr('src', 'images/!donotchange/closebuttonhover.svg');
     }, function(){
-        $('#closeButton').attr('src', 'images/closebutton.svg');
+        $('#closeButton').attr('src', 'images/!donotchange/closebutton.svg');
     });
+
 
     var facadeheight = document.getElementById('mainwrapperfacade');
     var headerheight = document.getElementById('headerwrapper').offsetHeight;

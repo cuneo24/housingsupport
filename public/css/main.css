@@ -1,60 +1,71 @@
+.pageTitle {
+    text-align: center;
+    width: 100%;
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
 #homelogo {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
     position: relative;
-    top: 1rem;
+    left: .8rem;
+    top: .4rem;
 }
 
 .titlelogo {
     color: #006cb7;
-    text-align: center;
-    font-size: 2.1875rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-weight: normal;
     display: block;
+    margin: unset;
+    padding: .3rem;
 }
 
 #logobar {
-    /*background-image: url('../images/clouds.png');
-    background-position: 0px 300px;
-    background-size: 100rem;*/
-    /*box-shadow: 0px 0px 10px 15px white inset;*/
-    background-color: rgba(255,255,255, .92);
+    background-color: #ddddd8;
     width: 100%;
-    padding-top: .6rem;
-    padding-bottom: .6rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    height: 6rem;
     text-align: center;
 }
 
 body {
-    background-image: url('../images/ejamesgaines.jpg');
+    background-image: url('../images/!donotchange/ejamesgaines.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: -3;
     overflow-x: hidden;
     font-family: "Helvetica", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    color: #6e6e6e;
 }
 
 #mainwrapper {
     display: block;
     width: 800px;
     margin: auto;
-    padding-top: 1.25rem;
     padding-bottom: 2%;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 #mainwrapperfacade {
     display: block;
     width: 800px;
     height: 100%;
-    background-color: rgba(255,255,255,.92);
+    background-color: rgba(255, 255, 255, 1);
     position: absolute;
     top: 20px;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -425px;
     z-index: -2;
-    box-shadow: 0px 0px 80px 100px rgba(255,255,255,.92);
+    box-shadow: 0px 0px 80px 100px rgba(255, 255, 255, 1);
+    padding-left: 25px;
+    padding-right: 25px;
 
 }
 
@@ -67,6 +78,7 @@ body {
     /*border-top: gray solid 2px;
     border-bottom: gray solid 2px;*/
     font-size: 0;
+    border-top: 2px solid #006cb7;
     border-bottom: 2px solid #006cb7;
 }
 
@@ -83,7 +95,7 @@ body {
     padding: .25rem;
 }
 
-.navbutton:first-child{
+.navbutton:first-child {
     border-left: none;
 }
 
@@ -112,8 +124,7 @@ button:focus {
     outline: 0;
 }
 
-html,body
-{
+html, body {
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -123,7 +134,7 @@ html,body
 
 #contentwrapper {
     padding: .9375rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 header {
@@ -138,7 +149,7 @@ header {
     text-align: center;
     color: #ebc46a;
     font-family: Garamond, sans-serif;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     padding: .5rem;
 
     /* border-bottom: black solid 3px; */
@@ -148,37 +159,35 @@ footer {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    background-color: #006cb7;
-    background-image: linear-gradient(#002866, #006cb7);
+    background-color: #f8f8f8;
     width: 100%;
     z-index: 2;
     /* border-top: 2px solid #006cb7; */
     text-align: center;
     padding: .5rem;
-    color: #ebc46a;
+    color: #006cb7;
     font-family: Garamond, sans-serif;
     font-size: 1.1rem;
     line-height: 1.8rem;
-    margin-bottom: -1.5rem;
+    border-top: 2px solid #006cb7;
+    /*margin-bottom: -3.5rem;*/
 }
 
 .residenceImage, .residenceImageAdmin {
-    width: 300px;
-    height: 250px;
+    max-width: 300px;
     display: inline-block;
     float: left;
 }
 
 .residenceImage:hover {
-    box-shadow: #006cb7 0px 0px 0px 3px;
+    opacity: .8;
 }
 
-.residenceImage:active {
-    box-shadow: #ebc46a 0px 0px 0px 3px;
-}
+
 
 #resImageText {
     font-family: Garamond, sans-serif;
+    padding-bottom: 2px;
 }
 
 .residenceDiv {
@@ -189,7 +198,8 @@ footer {
 }
 
 .residenceWrapper {
-    box-shadow: #ededed 0px 0px 3px;
+    overflow: hidden;
+    box-shadow: 0 0 15px #d2d2d2;
 }
 
 .residenceTable {
@@ -199,8 +209,10 @@ footer {
 .residenceBar {
     background-color: #006cb7;
     color: #ebc46a;
-    width: 100%;
+    width: 470px;
+    float:right;
     font-family: Garamond, sans-serif;
+    margin-bottom: .5rem;
 }
 
 .residenceTitle {
@@ -258,7 +270,11 @@ footer {
     /*background-color: #e9e9e9;*/
     padding-left: .45rem;
     padding-right: .45rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.directorWrapper {
+    box-shadow: 0 0 15px #d2d2d2;
 }
 
 .directorBar {
@@ -270,31 +286,39 @@ footer {
 }
 
 #description {
-    background-image: url('../images/hsilogo.png');
+    background-image: url('../images/!donotchange/hsilogo.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 494px 592px;
     width: 780px;
     margin-bottom: 1em;
     line-height: 2rem;
-    /* border-left: black solid 3px;
-    border-right: black solid 3px; */
 }
 
-#circle {
-    /*width: 30rem;
-    height: 5rem;
-    background: #f2f2f2;
-    border-radius: 50%;
-    border: 2px solid #ededed;*/
-
+#logo {
     margin: auto;
     display: block;
     color: #006cb7;
     font-family: Garamond, sans-serif;
-    font-size: 2.5rem;
-    padding: .5rem;
-    padding-bottom: 1.5rem;
+    font-size: 2.8rem;
+}
+
+.logoTextMain {
+    display: inline-block;
+    padding-top: .4rem;
+    text-align: left;
+}
+
+.logoText {
+    text-decoration: underline;
+    letter-spacing: .2rem;
+}
+
+.logoText2 {
+    display: block;
+    font-size: 1.6rem;
+    font-style: italic;
+    letter-spacing: .1rem;
 }
 
 .generalForm {
@@ -336,6 +360,7 @@ footer {
     width: 800px;
     display: block;
     margin: auto;
+    padding: .9375rem;
 }
 
 .alertDown {
@@ -348,15 +373,13 @@ footer {
     color: blue;
 }
 
-.dirpartwrapper {
-    box-shadow: #ededed 0px 0px 3px;
-}
+
 
 h1, h2 {
-    font-family:Garamond, sans-serif;
+    font-family: Garamond, sans-serif;
 }
 
-#logofull{
+#logofull {
     display: block;
     margin: auto;
     color: #006cb7;
@@ -380,11 +403,11 @@ h1, h2 {
     position: relative;
     min-height: 100%;
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 
 .footerbutton {
-    color: #ebc46a;
+    color: #006cb7;
     text-decoration: none;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -392,7 +415,7 @@ h1, h2 {
 
 
 .footerbutton:hover {
-    color: rgb(255, 229, 93);
+    color: rgba(0, 150, 255, 0.6);
 }
 
 #logout {
@@ -400,7 +423,7 @@ h1, h2 {
 }
 
 #login {
-    text-decoration:none;
+    text-decoration: none;
     color: #006cb7;
 }
 
@@ -430,6 +453,7 @@ h1, h2 {
     display: block;
     margin: auto;
     padding-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 .hsilogohome {
@@ -442,8 +466,10 @@ h1, h2 {
 
 .homedescription {
     text-align: center;
-    font-size: 1.8rem;
-    font-family: Garamond, serif;
-    color: #006cb7;
+    font-size: 1.4rem;
     line-height: 2.5rem;
+}
+
+* {
+    -webkit-appearance: none;
 }

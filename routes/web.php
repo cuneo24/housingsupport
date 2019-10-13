@@ -21,11 +21,13 @@ Route::get('/directors', 'DirectorController@show');
 
 Route::get('/partners', 'PartnerController@show');
 
-Route::get('/about', function () {
-    return view('about');
-});
+Route::get('/about', 'AboutController@show');
 
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/admin/about', 'AboutController@showAdmin');
+    Route::get('/admin/about/edit', 'AboutController@edit');
+    Route::put('/admin/about/update', 'AboutController@update');
+
     Route::get('/admin/directors', 'DirectorController@showAdmin');
     Route::get('/admin/partners', 'PartnerController@showAdmin');
     Route::get('/admin/residences', 'ResidenceController@showAdmin');

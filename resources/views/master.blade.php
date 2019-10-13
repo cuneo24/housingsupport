@@ -15,21 +15,18 @@
 
 <body>
 <div class='footerwrapper'>
-
-    <header>
-        <q><em>Housing Support, Inc. Keeping the lights on since 1990.</em></q>
-    </header>
-
     <div id='headerwrapper'>
         <div id='imageShade'></div>
         <div id='imageFocusDiv'>
             <img id='residenceImageFocus'>
-            <img id='closeButton' src='images/closebutton.svg'>
+            <img id='closeButton' src='images/!donotchange/closebutton.svg'>
         </div>
 
         <div id='logobar'>
-            <div id='circle'>
-                <img id='homelogo' src='images/hsilogo.svg'>Housing Support, Inc.<br>
+            <div id='logo'>
+                <img id='homelogo' src='images/!donotchange/hsilogo.svg'>
+                <div class='logoTextMain'><span class='logoText'>Housing Support Inc.</span>
+                    <span class='logoText2'>Keeping the lights on since 1990</span></div>
             </div>
         </div>
 
@@ -59,7 +56,6 @@
             <a class='footerbutton' href='/residences'>Residences</a>&bull;
             <a class='footerbutton' href='/partners'>Partners</a><br>
         </div>
-
         &copy; {{@date('Y')}} Housing Support, Inc. All rights reserved.
     </footer>
 

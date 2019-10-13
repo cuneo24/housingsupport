@@ -1,13 +1,14 @@
-@extends('master')
+@extends('admin/master')
 
 @section('title')
-    About
+    About*
 @endsection
 
 @section('content')
-    <div class='pageTitle'>
-        <h2 class='titlelogo' style='text-align: center;'>About Us</h2>
-    </div>
+    <form method='get' action='/admin/about/edit' class='generalForm confirmButton'>
+        <button class='confirmButton editButton'>Edit About</button>
+    </form>
+
     <div id='description'>
         @if(isset($about->firstp)){{$about->firstp}} <br><br>@endif
         @if(isset($about->secondp)){{$about->secondp}} <br><br>@endif
@@ -18,6 +19,6 @@
         @if(isset($about->seventhp)){{$about->seventhp}} <br><br>@endif
         @if(isset($about->eigthp)){{$about->eigthp}} <br><br>@endif
         @if(isset($about->ninthp)){{$about->ninthp}} <br><br>@endif
-        @if(isset($about->tenthp)){{$about->tenthp}}@endif
+        @if(isset($about->tenthp)){{$about->tenthp}} <br><br>@endif
     </div>
 @endsection

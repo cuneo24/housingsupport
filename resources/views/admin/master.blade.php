@@ -2,7 +2,7 @@
 $user = request()->user();
 ?>
 
-<!DOCTYPE html>
+        <!DOCTYPE html>
 
 <html lang='en' xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,6 +24,7 @@ $user = request()->user();
 </div>
 
 <nav class='navwrapper'>
+    <a class='navbutton adminnavbutton' href='/admin/about'>About*</a>
     <a class='navbutton adminnavbutton' href='/admin/directors'>Directors*</a>
     <a class='navbutton adminnavbutton' href='/admin/residences'>Residences*</a>
     <a class='navbutton adminnavbutton' href='/admin/partners'>Partners*</a>
@@ -39,28 +40,30 @@ $user = request()->user();
 <br>
 
 <section class='adminWrapper'>
-    <section class='alertDown'>
-        @if(isset($alertDown))
-            <h2>{{$alertDown}}</h2>
-        @endif
+    <section id='contentwrapper'>
+        <section class='alertDown'>
+            @if(isset($alertDown))
+                <h2>{{$alertDown}}</h2>
+            @endif
 
-        @if(session('alertDown'))
-            <h2>{{session('alertDown')}}</h2>
-        @endif
+            @if(session('alertDown'))
+                <h2>{{session('alertDown')}}</h2>
+            @endif
+        </section>
+
+        <section class='alertUp'>
+            @if(isset($alertUp))
+                <h2>{{$alertUp}}</h2>
+            @endif
+
+            @if(session('alertUp'))
+                <h2>{{session('alertUp')}}</h2>
+            @endif
+        </section>
+
+        @yield('content')
+
     </section>
-
-    <section class='alertUp'>
-        @if(isset($alertUp))
-            <h2>{{$alertUp}}</h2>
-        @endif
-
-        @if(session('alertUp'))
-            <h2>{{session('alertUp')}}</h2>
-        @endif
-    </section>
-
-
-    @yield('content')
 
 </section>
 </body>

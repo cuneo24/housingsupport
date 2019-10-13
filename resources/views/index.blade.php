@@ -6,9 +6,12 @@
 
 @section('content')
     <div class='homedescription'>
+        <div class='pageTitle'>
+            <h2 class='titlelogo'>Home</h2>
+        </div>
         <em><h2 class='titlelogo' style='text-align: center;'><q>Keeping the
                     <span style='color: #ebc46a;'>lights</span> on since 1990.</q></h2></em>
-        <img class='lightbulb' src='images/lightbulb.svg'>
+        <img class='lightbulb' src='images/!donotchange/lightbulb.svg'>
         <p>
             We are a non-profit housing development corporation with a mission of providing housing and related support services to low income, homeless, and disabled individuals in the Merrimack Valley.
         </p>
