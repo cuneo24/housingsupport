@@ -6,9 +6,9 @@
 
 @section('content')
     <div class='homedescription'>
-        <div class='pageTitle'>
-            <h2 class='titlelogo'>Home</h2>
-        </div>
+        @if(isset($update->update))<span class='homeUpdate'>{{$update->update}}</span>
+        @endif
+
         <em><h2 class='titlelogo' style='text-align: center;'><q>Keeping the
                     <span style='color: #ebc46a;'>lights</span> on since 1990.</q></h2></em>
         <img class='lightbulb' src='images/!donotchange/lightbulb.svg'>

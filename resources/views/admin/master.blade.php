@@ -24,6 +24,7 @@ $user = request()->user();
 </div>
 
 <nav class='navwrapper'>
+    <a class='navbutton adminnavbutton' href='/admin/home'>Home*</a>
     <a class='navbutton adminnavbutton' href='/admin/about'>About*</a>
     <a class='navbutton adminnavbutton' href='/admin/directors'>Directors*</a>
     <a class='navbutton adminnavbutton' href='/admin/residences'>Residences*</a>

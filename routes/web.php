@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/', 'HomeController@show');
 
 Route::get('/residences', 'ResidenceController@show');
 
@@ -24,9 +22,15 @@ Route::get('/partners', 'PartnerController@show');
 Route::get('/about', 'AboutController@show');
 
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/admin/', 'AboutController@showAdmin');
+
     Route::get('/admin/about', 'AboutController@showAdmin');
     Route::get('/admin/about/edit', 'AboutController@edit');
     Route::put('/admin/about/update', 'AboutController@update');
+
+    Route::get('/admin/home', 'HomeController@showAdmin');
+    Route::get('/admin/home/edit', 'HomeController@edit');
+    Route::put('/admin/home/update', 'HomeController@update');
 
     Route::get('/admin/directors', 'DirectorController@showAdmin');
     Route::get('/admin/partners', 'PartnerController@showAdmin');

@@ -137,24 +137,6 @@ html, body {
     font-size: 1rem;
 }
 
-header {
-    /*position: fixed;
-    top: 0px;
-    left: 0px;*/
-    height: 3%;
-    background-color: #006cb7;
-    background-image: linear-gradient(#006cb7, #002866);
-    width: 100%;
-    z-index: 2;
-    text-align: center;
-    color: #ebc46a;
-    font-family: Garamond, sans-serif;
-    font-size: 1.8rem;
-    padding: .5rem;
-
-    /* border-bottom: black solid 3px; */
-}
-
 footer {
     position: absolute;
     bottom: 0px;
@@ -475,4 +457,19 @@ h1, h2 {
 
 * {
     -webkit-appearance: none;
+}
+
+[type='checkbox'] {
+    -webkit-appearance: checkbox;
+}
+
+.homeUpdate {
+    background-color: #f0f0eb;
+    font-size: 1.2rem;
+    color: #006cb7;
+    display: block;
+    width: 100%;
+    margin: 1rem;
+    border: 1px solid #006cb7;
+    padding: .3rem;
 }

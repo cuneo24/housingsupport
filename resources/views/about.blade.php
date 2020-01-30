@@ -6,7 +6,7 @@
 
 @section('content')
     <div class='pageTitle'>
-        <h2 class='titlelogo' style='text-align: center;'>About Us</h2>
+        <h1 class='titlelogo' style='text-align: center;'>About Us</h2>
     </div>
     <div id='description'>
         @if(isset($about->firstp)){{$about->firstp}} <br><br>@endif
