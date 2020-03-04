@@ -14,7 +14,9 @@
 </head>
 
 <body>
-<div class='footerwrapper'>
+<div id='mainwrapperfacade'></div>
+
+<div class='mainwrapper'>
     <div id='headerwrapper'>
         <div id='imageShade'></div>
         <div id='imageFocusDiv'>
@@ -39,14 +41,10 @@
         </nav>
     </div>
 
-    <div id='mainwrapperfacade'></div>
 
-    <div id='mainwrapper'>
-        <section id='contentwrapper'>
-            @yield('content')
-        </section>
-
-    </div>
+    <section id='contentwrapper'>
+        @yield('content')
+    </section>
 
     <footer>
         <div class='footernav'>

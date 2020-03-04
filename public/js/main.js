@@ -44,13 +44,4 @@ window.onload = function(){
     }, function(){
         $('#closeButton').attr('src', 'images/!donotchange/closebutton.svg');
     });
-
-
-    var facadeheight = document.getElementById('mainwrapperfacade');
-    var headerheight = document.getElementById('headerwrapper').offsetHeight;
-    var navheight = document.getElementsByClassName('navwrapper');
-
-    facadeheight.style.top = headerheight + navheight[0].offsetHeight + 'px';
-    facadeheight.style.height = facadeheight.offsetHeight - facadeheight.offsetTop + 'px';
-
 };

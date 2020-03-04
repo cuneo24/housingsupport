@@ -16,7 +16,7 @@ class DirectorsTableSeeder extends Seeder
                 'Karen',
                 'Conard',
                 'President',
-                'Executive Director, Merrimack Valley Planning Commission, Haverhill MA. Ms. Conard has many years of experience in the public and private sectors, including having served in both the executive and legislative branches of state government, and local government overseeing all planning, zoning, community development, building/inspections, and conservation functions along with a staff of 25.'
+                'City Manager, City of Portsmouth NH. Ms. Conard has many years of experience in the public and private sectors, including having served in both the executive and legislative branches of state government, and local government overseeing all planning, zoning, community development, building/inspections, and conservation functions.'
             ],
             [
                 'Robert',
@@ -28,7 +28,7 @@ class DirectorsTableSeeder extends Seeder
                 'Dorothy',
                 'La France',
                 'Clerk',
-                'Ms. La France was the Director of the Newburyport Public Library for many years. She is currently returned and serves in a leadership role on a number of local boards.'
+                'Ms. La France was the Director of the Newburyport Public Library for many years. She is currently retired and serves in a leadership role on a number of local boards.'
             ],
             [
                 'Lisa',
@@ -40,13 +40,13 @@ class DirectorsTableSeeder extends Seeder
                 'Frank G.',
                 'Cousins Jr.',
                 'Board Member',
-                'The President of the Greater Newburyport Chamber of Commerce & Industry. He is the former Essex County Sheriff and lifelong Newburyport resident. Prior to his appointment to sheriff, Cousins had served on the Newburyport, Massachusetts City Council, and then in the Massachusetts House of Representatives from 1993.'
+                'The President of the Greater Newburyport Chamber of Commerce & Industry. He is the former Essex County Sheriff and lifelong Newburyport resident. Prior to his appointment to sheriff, Cousins had served on the Newburyport, Massachusetts City Council, and then elected to the Massachusetts House of Representatives in 1993.'
             ],
             [
                 'Paula',
                 'Newcomb',
                 'Executive Director',
-                'Ms. Newcomb has been involved in the development of private and public affordable housing opportunities for forty years, including fifteen years in compliance at the US Department of HUD, and the city of Haverhill.'
+                'Ms. Newcomb has been involved in the development of private and public affordable housing opportunities for forty years, including fifteen years in compliance at the US Department of HUD, and ten years with the City of Haverhill in Community Development and Affordable Housing production.'
             ]
         ];
 

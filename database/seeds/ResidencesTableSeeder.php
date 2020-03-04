@@ -25,7 +25,7 @@ class ResidencesTableSeeder extends Seeder
                 '1811',
                 '.068 acres',
                 '7,453 sq. ft',
-                '27 bedrooms, 8 full bathrooms, 4.5 bathrooms, common areas, a meeting room, and a kitchen',
+                '27 bedrooms, 7 full bathrooms, 3 half bathrooms, common areas, a meeting room, and a newly renovated kitchen',
                 '0'
             ],
             [
@@ -118,10 +118,10 @@ class ResidencesTableSeeder extends Seeder
                 'MA',
                 '01843',
                 '1997',
-                'Rebuilt 2009',
+                '2009',
                 '.11 acres',
                 '10,347 sq. ft',
-                '12 bedroom unit with nine one-bedroom units and one commercial space',
+                '1 two-bedroom unit with nine one-bedroom units and one commercial space',
                 '0'
             ],
             [
