@@ -15,8 +15,8 @@ class UsersTableSeeder extends Seeder
         $user = new User();
 
         $user->name = 'housingsupport';
-        $user->email = 'hsi@housingsupport.org';
-        $user->password = bcrypt('hsilogin');
+        $user->email = 'pnewcomb@housingsupport.org';
+        $user->password = bcrypt('Housing01');
         $user->save();
     }
 }

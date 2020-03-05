@@ -6,7 +6,8 @@
 
 @section('content')
     <div class='homedescription'>
-        @if(isset($update->update))<span class='homeUpdate'>{{$update->update}}</span>
+        @if($update->update != '')<span class='homeUpdate'>{{$update->update}}</span>
+        @else<br>
         @endif
 
         <em><h2 class='titlelogo' style='text-align: center;'><q>Keeping the
@@ -18,12 +19,6 @@
         <p>
             <a class='footerbutton' href='/about'>Click here to learn more!</a>
         </p>
-        <!-- remove after demo -->
-        <center>
-            <form method='get' action='/admin/directors'>
-                <button>Click here for admin panel</button>
-            </form>
-        </center>
 
     </div>
 @endsection
