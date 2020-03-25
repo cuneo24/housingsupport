@@ -6,7 +6,7 @@
 
 @section('content')
     <div class='pageTitle'>
-        <h2 class='titlelogo' style='text-align: center;'>Directors</h2>
+        <h1 class='titlelogo' style='text-align: center;'>Directors</h1>
     </div>
     <div class='dirpartwrapper'>
         @foreach($directors as $director)

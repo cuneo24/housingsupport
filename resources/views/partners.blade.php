@@ -6,7 +6,7 @@
 
 @section('content')
     <div class='pageTitle'>
-        <h2 class='titlelogo' style='text-align: center;'>Partners</h2>
+        <h1 class='titlelogo' style='text-align: center;'>Partners</h1>
     </div>
     <div class='dirpartwrapper'>
         @foreach($partners as $partner)

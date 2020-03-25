@@ -23,17 +23,8 @@
     padding: .3rem;
 }
 
-#logobar {
-    background-color: #ddddd8;
-    width: 100%;
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
-    height: 6rem;
-    text-align: center;
-}
-
 body {
-    background-image: url('../images/!donotchange/ejamesgaines.jpg');
+    background-image: url('../images/!donotchange/ejamesgaineslarge.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -57,7 +48,7 @@ body {
     display: block;
     width: 800px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, .92);
     position: fixed;
     left: 50%;
     margin-left: -400px;
@@ -73,30 +64,30 @@ body {
     text-align: center;
     background-color: #f8f8f8;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    /*border-top: gray solid 2px;
-    border-bottom: gray solid 2px;*/
     font-size: 0;
     border-top: 2px solid #006cb7;
     border-bottom: 2px solid #006cb7;
 }
 
 .navbutton {
-    width: 11.5rem;
     height: 2rem;
     color: #006cb7;
-    border: none;
     font-size: 1.75rem;
     text-decoration: none;
-    display: inline-block;
     font-family: Garamond, serif;
-    border-left: 2px solid #ededed;
-    padding: .25rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 1.25rem 0rem 3.25rem 0rem;
+    box-sizing: border-box;
+    border-top: 2px solid #ededed;
 }
 
 .navbutton:first-child {
     border-left: none;
+    border-top: none;
 }
 
 .adminnavbutton {
@@ -108,16 +99,8 @@ body {
     /* background-color: #006cb7; */
 }
 
-/*.navbutton:active {
-    color: #ebc46a;
-    border: #006cb7 solid 4px;
-    background-color: #006cb7;
-}*/
-
 #navbuttonselected {
     color: #ebc46a;
-    /* background-color: #006cb7;
-    border: #006cb7 solid 4px; */
 }
 
 button:focus {
@@ -154,11 +137,11 @@ footer {
     font-size: 1.1rem;
     line-height: 1.8rem;
     border-top: 2px solid #006cb7;
-    margin-bottom: -3rem;
+    margin-bottom: -6em;
 }
 
 .residenceImage, .residenceImageAdmin {
-    max-width: 300px;
+    width: 100%;
     display: inline-block;
     float: left;
 }
@@ -174,7 +157,6 @@ footer {
 
 .residenceDiv {
     min-height: 250px;
-    margin-left: 306px;
     padding: .45rem;
     line-height: 1.5rem;
 }
@@ -182,6 +164,7 @@ footer {
 .residenceWrapper {
     overflow: hidden;
     box-shadow: 0 0 15px #d2d2d2;
+    background-color: white;
 }
 
 .residenceTable {
@@ -191,15 +174,15 @@ footer {
 .residenceBar {
     background-color: #006cb7;
     color: #ebc46a;
-    width: 500px;
+    width: 100%;
     float:right;
     font-family: Garamond, sans-serif;
     margin-bottom: .5rem;
+    text-align: center;
 }
 
 .residenceTitle {
     font-size: 1.5rem;
-    padding-left: .75rem;
     font-weight: bold;
 }
 
@@ -253,6 +236,7 @@ footer {
     padding-left: .45rem;
     padding-right: .45rem;
     line-height: 1.8rem;
+    background-color: white;
 }
 
 .directorWrapper {
@@ -272,9 +256,17 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 494px 592px;
-    width: 780px;
+    max-width: 780px;
     margin-bottom: 1em;
     line-height: 2rem;
+}
+
+#logobar {
+    background-color: #ddddd8;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
 }
 
 #logo {
@@ -282,28 +274,19 @@ footer {
     display: block;
     color: #006cb7;
     font-family: Garamond, sans-serif;
-    font-size: 2.8rem;
-}
-
-.logoTextMain {
-    display: inline-block;
-    padding-top: .4rem;
-    text-align: left;
-    position: relative;
-    left: -.7rem;
-
+    padding: 1rem;
+    font-size: 2.1rem;
 }
 
 .logoText {
     text-decoration: underline;
-    letter-spacing: .2rem;
 }
 
 .logoText2 {
     display: block;
-    font-size: 1.6rem;
     font-style: italic;
-    letter-spacing: .1rem;
+    font-size: 1.8rem;
+    letter-spacing: .05rem;
 }
 
 .generalForm {
@@ -391,6 +374,10 @@ h1, h2 {
     margin: 0;
 }
 
+.footernav {
+    display: none;
+}
+
 .footerbutton {
     color: #006cb7;
     text-decoration: none;
@@ -472,4 +459,102 @@ h1, h2 {
     margin: 2rem 0 2rem 0;
     border: 1px solid #006cb7;
     padding: .3rem;
+    box-sizing: border-box;
+}
+
+#contentwrapper{
+    padding: 0 1rem 0 1rem;
+    box-sizing: border-box;
+}
+
+@media (min-width: 640px){
+    body {
+        background-image: url('../images/!donotchange/ejamesgainesmedium.jpg');
+    }
+
+    .navbutton {
+        width: 20%;
+        max-width: 250px;
+        border-left: 2px solid #ededed;
+        padding: .25rem 0rem 2.25rem 0rem;
+    }
+
+    .navwrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .residenceBar {
+        text-align: left;
+        width: 60%;
+    }
+
+    .residenceImage {
+        width: 40%;
+
+    }
+
+    .residenceDiv {
+        margin-left: 40%;
+    }
+
+    .residenceTitle {
+        padding-left: .75rem;
+    }
+
+    .logobar {
+        height: 6rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .logoTextMain {
+        display: inline-block;
+        padding-top: .4rem;
+        text-align: left;
+        position: relative;
+        left: -.7rem;
+    }
+
+    #logo {
+        font-size: 2.8rem;
+    }
+
+    .logoText {
+        letter-spacing: .2rem;
+    }
+
+    .logoText2 {
+        font-size: 1.6rem;
+        letter-spacing: .1rem;
+    }
+
+    .footernav {
+        display: initial;
+    }
+
+    #mainwrapperfacade {
+        background-color: rgba(255, 255, 255, 1);
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-image: url('../images/!donotchange/ejamesgaineslarge.jpg');
+    }
+}
+
+#corona {
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    color: red;
+    text-align: left;
+    line-height: 2rem;
+    border: 1px solid red;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+}
+
+#corona p a {
+    color: red;
 }

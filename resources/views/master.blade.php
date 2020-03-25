@@ -7,6 +7,7 @@
     <meta name="keywords"
           content="housing, support, inc, newburyport, haverhill, lawrence, amesbury, ma, massachusetts">
     <meta name="description" content="Housing Support, Inc. Newburyport, MA official website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title id='title'>@yield('title') - Housing Support</title>
     <link rel='stylesheet' type='text/css' href='/css/main.css'>
     <script type='text/javascript' src='/js/main.js'></script>
