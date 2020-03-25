@@ -202,8 +202,8 @@ footer {
 }
 
 #residenceImageFocus {
-    max-height: 800px;
-    max-width: 800px;
+    max-height: 550px;
+    max-width: 320px;
 }
 
 #imageFocusDiv {
@@ -285,7 +285,7 @@ footer {
 .logoText2 {
     display: block;
     font-style: italic;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     letter-spacing: .05rem;
 }
 
@@ -536,11 +536,21 @@ h1, h2 {
     #mainwrapperfacade {
         background-color: rgba(255, 255, 255, 1);
     }
+
+    #residenceImageFocus {
+        max-height: 800px;
+        max-width: 620px;
+    }
 }
 
 @media (min-width: 1000px) {
     body {
         background-image: url('../images/!donotchange/ejamesgaineslarge.jpg');
+    }
+
+    #residenceImageFocus {
+        max-height: 800px;
+        max-width: 800px;
     }
 }
 
