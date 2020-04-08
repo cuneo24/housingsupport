@@ -14,9 +14,9 @@
             <p>
                 <strong>Dear Valued Housing Support Inc. Partner:</strong><br>
 
-                HSI is closely monitoring developments with respect to COVID-19, including information and guidance published by the State of Massachusetts and Federal Government healthcare authorities.
+                Beginning Monday, April 13,2020, Housing Support Inc. maintenance calls should be to a new telephone number, 978-270-6157. During this  time, we are hoping for your patience as we navigate a staffing transition.
 
-                Effective March 24th, in order to prevent the further spread of COVID-19, our staff will be working off site and working remotely to the extent possible. During this time, HSI will be considered an essential business. As a non-exempt entity we will be responding to emergency calls only. No routine maintenance will be undertaken between today and April 8, 2020. Further updates will be provided to our partners via email and updated notices on or website at <a href='https://www.housingsupport.org'>www.housingsupport.org</a>.
+                HSI continues to closely monitor developments with respect to COVID-19, including information and guidance published by the State of Massachusetts and Federal Government healthcare authorities. In order to prevent the further spread of COVID-19, our staff will be working off site and working remotely to the extent possible. As an essential entity we will be responding to emergency calls only.  No routine maintenance will be undertaken between until we all received an indication from the Governor of Massachusetts that it is safe to do so.   Further updates will be provided to our partners via email and updated notices on or website at <a href='https://www.housingsupport.org'>www.housingsupport.org</a>.
 
                 We encourage you to continue to check this page for the latest information.
 
