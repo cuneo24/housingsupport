@@ -141,7 +141,7 @@ footer {
 }
 
 .residenceImage, .residenceImageAdmin {
-    width: 100%;
+    width: 40%;
     display: inline-block;
     float: left;
 }
@@ -487,11 +487,6 @@ h1, h2 {
     .residenceBar {
         text-align: left;
         width: 60%;
-    }
-
-    .residenceImage {
-        width: 40%;
-
     }
 
     .residenceDiv {
