@@ -26,15 +26,15 @@
         </div>
 
         <div id='logobar'>
-            <div id='logo'>
-                <img id='homelogo' src='images/!donotchange/hsilogo.svg'>
-                <div class='logoTextMain'><span class='logoText'>Housing Support Inc.</span>
-                    <span class='logoText2'>Keeping the lights on since 1990</span></div>
-            </div>
+
+                <div id='logo'>
+                    <a href='/'><img id='homelogo' src='images/!donotchange/hsilogo.svg'></a>
+                    <div class='logoTextMain'><span class='logoText'>Housing Support Inc.</span>
+                        <span class='logoText2'>Keeping the lights on since 1990</span></div>
+                </div>
         </div>
 
         <nav class='navwrapper'>
-            <a class='navbutton' href='/'>Home</a>
             <a class='navbutton' href='/about'>About</a>
             <a class='navbutton' href='/directors'>Directors</a>
             <a class='navbutton' href='/residences'>Residences</a>
