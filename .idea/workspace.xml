@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b0520e08-06fc-4630-b9bb-afc7a2d9e6f4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,26 +19,81 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="267" column="24" lean-forward="true" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
+            <state relative-caret-position="9828">
+              <caret line="468" column="1" selection-start-line="468" selection-start-column="1" selection-end-line="468" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="462">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/seeds/DirectorsTableSeeder.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/admin/partners.blade.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="16" column="181" lean-forward="true" selection-start-line="16" selection-start-column="181" selection-end-line="16" selection-end-column="181" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ResidenceController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state relative-caret-position="411">
+              <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="62" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -144,9 +199,9 @@
         <option value="$PROJECT_DIR$/resources/views/directors.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/partners.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/residences.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
         <option value="$PROJECT_DIR$/public/css/main.css" />
         <option value="$PROJECT_DIR$/resources/views/master.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
       </list>
     </option>
   </component>
@@ -351,7 +406,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../assignment-7-cuneo24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Project-4" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -504,18 +559,23 @@
       <workItem from="1597205276416" duration="3000" />
       <workItem from="1599610605295" duration="97000" />
       <workItem from="1599612423002" duration="610000" />
-      <workItem from="1600477844573" duration="231000" />
+      <workItem from="1600477844573" duration="378000" />
+      <workItem from="1601087131170" duration="485000" />
+      <workItem from="1603839574355" duration="1217000" />
+      <workItem from="1607998667884" duration="922000" />
+      <workItem from="1608140280138" duration="165000" />
+      <workItem from="1629323736281" duration="677000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276549000" />
+    <option name="totallyTimeSpent" value="280162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.096979335" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10095389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -561,9 +621,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/User.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Partner.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -575,13 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
           <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
@@ -615,13 +665,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/residences.blade.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/admin/edit_update.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/admin/update.blade.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -713,20 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="62" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/partners.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -796,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/DirectorsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="768">
-          <caret line="48" column="305" selection-start-line="48" selection-start-column="305" selection-end-line="48" selection-end-column="305" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Update.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -813,9 +835,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/layouts/app.blade.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/residences.blade.php">
@@ -832,9 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ResidenceController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -845,24 +861,72 @@
     <entry file="file://$USER_HOME$/Downloads/wp-config.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/edit_update.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        <state relative-caret-position="210">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="267" column="24" lean-forward="true" selection-start-line="267" selection-start-column="24" selection-end-line="267" selection-end-column="24" />
+        <state relative-caret-position="9828">
+          <caret line="468" column="1" selection-start-line="468" selection-start-column="1" selection-end-line="468" selection-end-column="1" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/DirectorsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/admin/partners.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ResidenceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/master.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state relative-caret-position="411">
+          <caret line="32" column="43" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="61" column="32" lean-forward="true" selection-start-line="61" selection-start-column="32" selection-end-line="62" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="39" lean-forward="true" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="181" lean-forward="true" selection-start-line="16" selection-start-column="181" selection-end-line="16" selection-end-column="181" />
         </state>
       </provider>
     </entry>
